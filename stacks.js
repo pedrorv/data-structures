@@ -24,13 +24,28 @@ var Stack = function() {
   this.peek = function () {
     return storage[count-1];
   }
+
+  this.storage = function() {
+    return storage;
+  }
+}
+
+Stack.prototype.toString = function() {
+  return JSON.stringify(this.storage());
+}
+
+Stack.prototype.inspect = function() {
+  return this.storage();
 }
 
 var myStack = new Stack();
+console.log(myStack);
 
 myStack.push(1);
 myStack.push(2);
 myStack.push(1);
+
+console.log(myStack);
 
 console.log(myStack.pop() === 1);
 console.log(myStack.peek() === 2);
