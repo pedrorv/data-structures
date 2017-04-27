@@ -1,4 +1,4 @@
-var Stack = function() {
+function Stack () {
   var count = 0;
   var storage = [];
 

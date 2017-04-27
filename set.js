@@ -1,4 +1,4 @@
-var mySet = function () {
+function mySet () {
   var storage = [];
 
   this.has = function (value) {

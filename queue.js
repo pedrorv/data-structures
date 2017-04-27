@@ -1,4 +1,4 @@
-var Queue = function () {
+function Queue () {
   var storage = [];
 
   this.print = function () {
